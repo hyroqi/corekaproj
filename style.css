@@ -86,7 +86,7 @@ img.navimg{
     padding-left: 5rem;
     padding-right: 15rem;
     padding-bottom: 10rem;
-    width: 66.3%;
+    width: 65%;
 }
 
 .subtext h2{
@@ -116,10 +116,25 @@ img.navimg{
     padding-left: 10rem;
 }
 
+.subtext5{
+    clear:both;
+    padding-top: 6rem;
+}
+
+.subtext5 p1{
+    font-size: 1rem;
+}
+
 .bottomwrap{
     position:flex;
     background-color: white;
     width: 100vw;
     height: 100rem;
     clear:both;
+    color: white;
 }
+
+.bottomwrap h2{
+
+}
+
