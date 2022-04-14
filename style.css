@@ -1,9 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@232&family=Open+Sans:wght@300&display=swap');
 
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
 *{
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+}
+
+.background{
     background-color: #000000;
 }
 
@@ -78,8 +86,7 @@ img.navimg{
 
 .textwrapper{
     font-family: 'Open Sans';
-    font-size: 2.5rem;
-    font-weight: lighter;
+    font-size: calc(100vw / 50);
     color: white;
     float:left;
     padding-top: 7.5rem;
@@ -89,15 +96,19 @@ img.navimg{
     width: 65%;
 }
 
+.textwrapper .headertext h1{
+    font-weight: 200;
+}
+
 .subtext h2{
-    font-size: 2rem;
+    font-size: calc(100vw / 70);
     margin-top: 3.5rem;
     line-height: 1.5rem;
     float: left;
 }
 
 .subtext p1{
-    font-size: 1rem;
+    font-size: calc(100vw / 150);
     line-height: 1rem;
 }
 
@@ -126,15 +137,87 @@ img.navimg{
 }
 
 .bottomwrap{
-    position:flex;
+    position:relative;
+    min-height: 50rem;
     background-color: white;
-    width: 100vw;
-    height: 100rem;
     clear:both;
-    color: white;
+    color: black;
 }
 
 .bottomwrap h2{
+    font-family: 'Open Sans';
+    font-size: 5rem;
+    font-weight: 200;
+    text-align: center;
+    padding-top: 6rem;
+}
+
+.bottomwrap .title .subtitle{
+    font-family: 'Open Sans';
+    line-height: 1.5rem;
+    font-size: 1rem;
+    text-align: center;
+    padding-top: 1rem;
+}
+
+.owl-carousel {
+    padding-top: 3vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-basis: 20px;
+}
+
+.owl-carousel div p1{
+    color: rgb(0, 0, 0);
+    font-size: 1.3vw;
+    font-family: "Open Sans";
+    font-weight: 500;
+    background-color: white;
+    flex-shrink: 0;
+    flex-grow: 1;
+    width:100%;
+    justify-content: center;
+    align-items: center;
+    padding-left: 1.5vw;
+}
+
+.owl-carousel .item{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url(assets/Image\ 24.png);
 
 }
 
+.flexitem p2{
+    display:flex;
+    flex-direction: column;
+    color: rgb(0, 0, 0);
+    font-size: .7vw;
+    font-family: "Open Sans";
+    font-weight: 200;
+    background-color: white;
+    padding: 0 10vw;
+}
+
+.button div{
+    display:flex;
+    justify-content: center;
+    background-color: white;
+    padding-bottom: 4vw;
+}
+
+.button div a{
+    background-color: red;
+    padding: 9px 25px;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+
+.button div a:hover{
+    background-color: pink;
+    font-size: 150%;
+}

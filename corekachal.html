@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <title>Coreka Challenge</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
     <div class="background">
@@ -90,11 +92,72 @@
         </div>
     </div> 
     <div class="bottomwrap">
-       <div>
-           <h2>
-               <br> Testing Testing
-           </h2>
-       </div>
+        <h2 class="title">
+            Urban or commuter?
+            <div class="subtitle">
+                Safety is not a one-size fits all story. Check out our collection of <br>
+                helmets and choose the one that fits your needs the best.
+            </div>
+        </h2>
+        <div class="owl-carousel owl-theme">
+            <div class="item item1">
+                <img src="assets/1.png">
+                <p1>Lumos Kickstart</p1>
+                <div class="flexitem"> 
+                    <p2>from $999,95</p2>
+                </div>
+            </div>
+            <div class="item item2">
+                <img src="assets/2.png">
+                <p1>Lumos Street</p1>
+                <div class="flexitem"> 
+                    <p2>from $999,95</p2>
+                </div>
+            </div>
+            <div class="item item3">
+                <img src="assets/3.png">
+                <p1>Lumos Ultra</p1>
+                <div class="flexitem"> 
+                    <p2>from $999,95</p2>
+                </div>
+            </div>
+            <div class="item item4">
+                <img src="assets/4.png">
+                <p1>Lumos Matrix</p1>
+                <div class="flexitem"> 
+                    <p2>from $999,95</p2>
+                </div>
+            </div>
+        </div>
     </div>
+    <div class="button">
+        <div>
+            <a class="cta" href="#">Shop Helmets</a>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script type="text/javascript">
+        $('.owl-carousel').owlCarousel({
+    loop:true,
+    margin:500,
+    nav:true,
+    stagePadding: 100,
+    items:3,
+    dots: false,
+    responsive:{
+        0:{
+            items:2
+        },
+        600:{
+            items:3
+        },
+        1000:{
+            items:3
+        }
+    }
+})
+    </script>
 </body>
 </html>
