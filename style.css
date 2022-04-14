@@ -1,15 +1,16 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@232&family=Open+Sans:wght@300&display=swap');
 
 *{
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    background-color: #0f1013;
+    background-color: #000000;
 }
+
 li, a{
     font-family: "Montserrat", sans-serif;
     font-weight: 500;
-    font-size: 1.5rem;
+    font-size: 1rem;
     color: #ffffff;
     text-decoration: none;
 }
@@ -18,10 +19,100 @@ header{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 30px 10%;
+    padding: 30px;
+    left: 100px;
+    background-color: rgb(0, 0, 0);
 }
 
-.navimg{
-    height: 1rem;
-    width: 1.2rem;
+img.navimg{
+    display: flex;
+    justify-content: flex-end;
+    height: 1.7rem;
+    width: 2.4rem;
+    background-color: rgb(0, 0, 0);
+}
+
+.nav__links{
+    list-style: none;
+    background-color: rgb(0, 0, 0);
+}
+
+.nav__links li{
+    display: inline-block;
+    padding: 0px 20px;
+    align-self: left;
+    background-color: rgb(0, 0, 0);
+}
+
+.nav__links li a{
+    transition: all 0.3s ease 0s;
+    background-color: rgb(0, 0, 0);
+}
+
+.nav__links li a:hover{
+    background-color: rgb(0, 0, 0);
+    color: aqua;
+}
+
+.Lumosmid a{
+    transition: all 0.3s ease 0s;
+    font-size: 200%;
+    text-align: center;
+    background-color: rgb(0, 0, 0);
+}
+
+.Lumosmid a:hover{
+    color: red;
+    background-color: rgb(0, 0, 0);
+    font-size: 250%;
+}
+
+.wrapper *{
+    background-color: black;
+}
+
+.blackimg{
+    float:left;
+    padding-right: 30px;
+}
+
+.textwrapper{
+    display:box;
+    font-family: 'Open Sans';
+    font-size: 2.5rem;
+    font-weight: lighter;
+    color: white;
+    float:left;
+    padding-top: 7.5rem;
+    padding-left: 5rem;
+    padding-right: 15rem;
+    padding-bottom: 10rem;
+    width: 66.3%;
+}
+
+.subtext h2{
+    font-size: 2rem;
+    margin-top: 3.5rem;
+    line-height: 1.5rem;
+    float: left;
+}
+
+.subtext p1{
+    font-size: 1rem;
+    line-height: 1rem;
+}
+
+.subtext2{
+    float:left;
+    padding-left: 10rem;
+}
+
+.subtext3{
+    float:left;
+    clear:both;
+}
+
+.subtext4{
+    float:left;
+    padding-left: 10rem;
 }
