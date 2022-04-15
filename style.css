@@ -109,7 +109,7 @@ img.navimg{
 
 .subtext p1{
     font-size: calc(100vw / 150);
-    line-height: 1rem;
+    line-height: 1vw;
 }
 
 .subtext2{
@@ -133,7 +133,7 @@ img.navimg{
 }
 
 .subtext5 p1{
-    font-size: 1rem;
+    font-size: 0.75vw;
 }
 
 .bottomwrap{
@@ -160,35 +160,44 @@ img.navimg{
     padding-top: 1rem;
 }
 
-.owl-carousel {
-    padding-top: 3vw;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-basis: 20px;
+.swiper {
+    /* display:relative; */
+    width: auto;
+    height: 500px;
+  }
+  
+/* .owl-carousel {
+    padding-top: 5vw;
+    padding-bottom: 5vw;
 }
 
 .owl-carousel div p1{
+    display:flex;
+    flex-direction: column;
     color: rgb(0, 0, 0);
     font-size: 1.3vw;
     font-family: "Open Sans";
     font-weight: 500;
     background-color: white;
-    flex-shrink: 0;
-    flex-grow: 1;
-    width:100%;
     justify-content: center;
     align-items: center;
-    padding-left: 1.5vw;
 }
 
 .owl-carousel .item{
-    display:flex;
-    flex-direction: column;
+    display:relative;
     align-items: center;
     background-image: url(assets/Image\ 24.png);
-
+    padding-top: 3vw;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1vw; 
 }
+
+.owl-carousel .item img{
+    display:block;
+    overflow:hidden!important;
+    height:50%!important;
+} */
 
 .flexitem p2{
     display:flex;
@@ -198,7 +207,7 @@ img.navimg{
     font-family: "Open Sans";
     font-weight: 200;
     background-color: white;
-    padding: 0 10vw;
+    align-items: center;
 }
 
 .button div{
@@ -220,4 +229,32 @@ img.navimg{
 .button div a:hover{
     background-color: pink;
     font-size: 150%;
+}
+
+.swiper {
+    width: 100%;
+    height: 500px;
+  }
+
+.swiper-slide img{
+    background-image: url(assets/Image\ 24.png);
+}
+
+.swiper-slide{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.swiper-wrapper div p1{
+    display:flex;
+    flex-direction: column;
+    color: rgb(0, 0, 0);
+    font-size: 1.3vw;
+    font-family: "Open Sans";
+    font-weight: 500;
+    background-color: white;
+    justify-content: center;
+    align-items: center;
 }
